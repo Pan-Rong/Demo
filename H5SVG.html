@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>椭圆</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cinema" id="cinemaId">
+            <div class="cinema_title">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height: "50" width="400">
+                    <line x1="0" y1="0" x2="40" y2="50" style="stroke:#aaa ;stroke-width:2" />
+                    <line x1="400" y1="0" x2="360" y2="50" style="stroke:#aaa ;stroke-width:2" />
+                    <line x1="40" y1="50" x2="360" y2="50" style="stroke:#aaa ;stroke-width:2" />
+                    <text x="130" y="25" font-size="30" style="fill:#000">1号厅 银幕</text>
+                </svg>
+            </div>
+            <div class="cinema_middle">
+                <div id="verticalTitle"></div>
+                <div id="svg" class="cinema_title"></div>
+            </div>
+            <div id="horizontalTitle"></div>
+
+           
+        </div>
+        <div class="skeletonize" id="skeletonize"></div>
+        
+        <div>
+            <div style="width:20px;height:20px; border: 1px solid #f00;" id="test"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height: "20px" width="80px" id="svg_111">
+                <rect x="0%" width="80%" height="30px" rx="0" ry="0" style="fill: #0aa; stroke-width: 2px;" />
+            </svg>
+        </div>
+    </div>
+    <script>
+        document.getElementById("svg_111").addEventListener("click", function () {
+            document.getElementById("cinemaId").style.transform = 'translate(200px,200px) scale(1.5)';
+        })
+        document.getElementById("test").addEventListener("click", function () {
+            document.getElementById("cinemaId").style.transform = 'scale(1) translate(0px,0px)';
+        })
+    </script>
+    <script src="index.js">
+    </script>
+
+</body>
+
+</html>
