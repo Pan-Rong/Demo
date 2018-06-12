@@ -1,0 +1,62 @@
+{
+  "pages": [
+    
+    "pages/tickets/tickets",
+    "pages/feature/feature",
+    "pages/goods/goods",
+    "pages/recommend/recommend",
+    "pages/my/my",
+    "pages/tickets/selectSeats/selectSeats",
+    "pages/tickets/buyTickets/buyTickets",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/searchResult/searchResult"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#47a86c",
+    "navigationBarTitleText": "推荐",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#fff",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#686868",
+    "selectedColor": "#47a86c",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/tickets/tickets",
+        "iconPath": "comm/images/top_icon.png",
+        "selectedIconPath": "comm/images/top_active_icon.png",
+        "text": "购票"
+      },
+      {
+        "pagePath": "pages/recommend/recommend",
+        "iconPath": "comm/images/top_icon.png",
+        "selectedIconPath": "comm/images/top_active_icon.png",
+        "text": "推荐"
+      },
+      {
+        "pagePath": "pages/feature/feature",
+        "iconPath": "comm/images/top_icon.png",
+        "selectedIconPath": "comm/images/top_active_icon.png",
+        "text": "特色"
+      },
+      {
+        "pagePath": "pages/goods/goods",
+        "iconPath": "comm/images/top_icon.png",
+        "selectedIconPath": "comm/images/top_active_icon.png",
+        "text": "卖品"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "comm/images/my_icon.png",
+        "selectedIconPath": "comm/images/my_active_icon.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "debug": true
+}

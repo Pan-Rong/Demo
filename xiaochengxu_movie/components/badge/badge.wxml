@@ -1,0 +1,6 @@
+<template name="badge">
+  <view class="film_title_badge">
+    <view style="font-size: 30rpx">{{title}}</view>
+    <view class="film-badge {{position}}">{{icon}}</view>
+  </view>
+</template>

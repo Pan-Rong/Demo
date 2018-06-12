@@ -1,0 +1,65 @@
+<!--pages/tickets/selectedSeats/selectSeats.wxml-->
+<import src="../../../components/fixedBottom/fixedBottom.wxml" />
+<!--电影标题-->
+<view>
+  <view style="font-weight:900">复仇者联盟3</view>
+  <view>今天05-30 15:30 (国语2D)</view>
+</view>
+<!--座位信息-->
+<view>
+  <view class="seat_top">
+    <view class="seat_top_tips">
+      <view class="seat_top_tips_icon"></view>
+      <view> 可选</view>
+    </view>
+    <view class="seat_top_tips">
+      <view class="seat_top_tips_icon" style="background-color:#fa4;"></view> 已选</view>
+    <view class="seat_top_tips">
+      <view class="seat_top_tips_icon" style="background-color:#bbb;"></view> 已售</view>
+  </view>
+  <view class="seat_middle_container">
+    <view class="seat_middle" id="ciname_seats" catchtap='pressView' style="transform:scale({{scaleFactor}})">
+      <view class="seat_middle_title">1号厅 银幕</view>
+      <view class="seat_middle_detail">
+        <view class="seat_middle_column">
+          <block wx:for="{{[1,2,3,4,5,6,7,8,9,10,11]}}" wx:key="index">
+            <block wx:if="{{ index === 2 }}">
+              <view style="width: 40rpx; height: 50rpx; margin-bottom: 50rpx;">{{item}}</view>
+            </block>
+            <block wx:else>
+              <view style="width: 40rpx; height: 50rpx;">{{item}}</view>
+            </block>
+          </block>
+        </view>
+        <view class="seat_list">
+          <block wx:for="{{[0,1,2,3,4,5,6,7,8,9,10]}}" wx:key="item">
+            <block wx:if="{{ item === 2 }}">
+              <block wx:for="{{[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]}}" wx:key="index" wx:for-item="items">
+                <view class="seat_list_icon" style="margin: 0 5rpx 50rpx;background-color:{{seatColor[item - 0][index - 0].color}}" bindtap="changeColor" id="{{item}}_{{index}}" />
+              </block>
+            </block>
+            <block wx:else>
+              <block wx:for="{{[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]}}" wx:key="index" wx:for-item="items">
+                <view class="seat_list_icon" style="margin:0 5rpx;background-color:{{seatColor[item - 0][index - 0].color}} " bindtap="changeColor" id="{{item}}_{{index}}" />
+              </block>
+            </block>
+          </block>
+        </view>
+      </view>
+      <view class="seat_middle_row">
+        <block wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]}}" wx:key="index">
+          <view style="width: 39rpx; height: 50rpx;line-height: 55rpx;margin: -7rpx 5rpx 0; ">{{item}}</view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class="seat_middle_info">
+    <block wx:for="{{seatInfo}}" wx:key="index">
+      <view class="seat_middle_info_item">
+        <view>{{item.location}}</view>
+        <view>{{item.price}}</view>
+      </view>
+    </block>
+  </view>
+</view>
+<template is="fixedBottom" data="{{left:'64', right:'确认订单',color:'#fa4'}}" />

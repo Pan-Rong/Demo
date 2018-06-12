@@ -1,0 +1,19 @@
+.film_title_badge {
+  display: flex;
+  flex-direction: row;
+}
+.film-badge {
+  margin-left:10rpx;
+  color: #000;
+  border-radius: 10rpx;
+  border: 1rpx solid #aaa;
+  width: 50rpx;
+  text-align: center;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+.badgeRightTop{
+  position:relative;
+  top: -15rpx;
+  left: -10rpx;
+}

@@ -1,0 +1,13 @@
+.fixed_bottom {
+  position: fixed;
+  bottom: 0rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100rpx;
+  width: 100%;
+  line-height:100rpx;
+  text-align:center;
+  background-color: #eee;
+  z-index:500;
+}

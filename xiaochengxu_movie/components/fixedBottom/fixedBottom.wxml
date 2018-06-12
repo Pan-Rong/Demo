@@ -1,0 +1,8 @@
+<template name="fixedBottom">
+  <view class="fixed_bottom">
+    <view style="width: 120rpx;">￥
+      <text style="font-size: 38rpx;">{{left}}</text>
+    </view>
+    <view style="background-color:{{color}};width: 200rpx; color:#fff" bindtap="buyTicket" id="buy">{{right}}</view>
+  </view>
+</template>

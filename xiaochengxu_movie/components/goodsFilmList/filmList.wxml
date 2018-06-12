@@ -1,0 +1,25 @@
+<template name="filmList">
+  <view wx:for="{{data}}" wx:key="index">
+    <view class="meal_list_item" >
+      <view >
+        <image src="" style="width: 170rpx; height:200rpx;background-color:#ccc;" />
+      </view>
+      <view class="meal_list_item_text">
+        <view class="meal_list_item_left">
+          <view style="font-size: 30rpx">{{data[index].title1}}</view>
+          <view>{{data[index].title2}}</view>
+          <view>{{data[index].title3}}</view>
+          <view>
+            <text>￥</text>
+            <text style="font-weight: 900;"> {{data[index].price}} </text>
+          </view>
+        </view>
+        <view class="meal_list_item_right">
+          <icon type="cancel" bindtap="decreaseItem" id="{{index}}_"/>
+          <view class="meal_item_count"> {{data[index].count}} </view>
+          <icon type="success" bindtap="addItem" id="{{index}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

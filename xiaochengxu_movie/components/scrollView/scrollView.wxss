@@ -1,0 +1,10 @@
+.scroll-view_H {
+  width: 100%;
+}
+.scroll-view-item_HH {
+  width: 240rpx;
+  height: 240rpx;
+  display: inline-block;
+  margin: 10rpx;
+  text-align: center;
+}

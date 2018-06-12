@@ -1,0 +1,4 @@
+<!--pages/feature/feature.wxml-->
+ <import src="../../components/goodsFilmList/filmList.wxml"/>  
+
+<template is="filmList" data="{{...obj,item1}}" />

@@ -1,0 +1,48 @@
+<!--pages/tickets/tickets.wxml-->
+<import src="../../components/ticketsPopular/ticketsPopular.wxml" />
+<import src="../../components/scrollView/scrollView.wxml" />
+<import src="../../components/ticketsComing/ticketsComing.wxml" />
+<view class="body">
+  <!--tab切换-->
+  <view class="nav bc_white">
+    <view class="{{selected?'orange':'default'}}" bindtap="selected">正在热映</view>
+    <view class="{{selected1?'orange':'default'}}" bindtap="selected1">即将上映</view>
+    <view class="goods_search">
+      <icon type="search" color="#555" size="20" bindtap="navToSearch" />
+    </view>
+  </view>
+  <!--正在热映-->
+  <view class="{{selected?'show':'hidden'}}">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height: 280rpx;">
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="move_popular_list">
+      <template is="ticketsPopular" data="{{dataPopular}}" />
+    </view>
+  </view>
+  <!--即将上映-->
+  <view class="{{selected1?'show':'hidden'}}">
+    <view class="coming_top_title">
+      <text>本月想看人数最多</text>
+    </view>
+    <view>
+      <template is="scrollView" data="" />
+    </view>
+    <view class="coming_top_title">
+      <text>2018-6.7 明天</text>
+    </view>
+    <view class="move_list_coming">
+      <template is="ticketsComing" data="{{data: dataComing.tomorrow, flg: 'tom'}}" />
+    </view>
+    <view class="coming_top_title">
+      <text>2018-6.8 后天</text>
+    </view>
+    <view class="move_list_coming">
+      <template is="ticketsComing" data="{{data: dataComing.thirdDay, flg: 'thi'}}" />
+    </view>
+  </view>
+</view>

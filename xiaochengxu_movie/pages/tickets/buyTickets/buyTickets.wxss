@@ -1,0 +1,112 @@
+/* pages/tickets/buyTickets/buyTickets.wxss */
+@import "../../../components/badge/badge.wxss";
+@import "../../../components/arrowLeft/arrowLeft.wxss";
+@import "../../../components/commentList/commentList.wxss";
+@import "../../../components/fixedBottom/fixedBottom.wxss";
+.film_list_item {
+  display: flex;
+  flex-direction: row;
+  margin: 0 20rpx 10rpx;
+}
+
+.film_list_item_text {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 20rpx;
+  font-size: 28rpx;
+}
+
+.film_poster {
+  position: relative;
+  top: -90rpx;
+  width: 200rpx;
+  height: 260rpx;
+  background-color: #ccc;
+  box-shadow: 0rpx 0rpx 20rpx 3rpx #888;
+  z-index: 500;
+}
+
+.film_list_item_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 95%;
+  height: 160rpx;
+}
+
+.film_icon_row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.middle_list_item {
+  position: relative;
+  top: -80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 20rpx 10rpx;
+}
+
+.film_detail_text {
+  position: relative;
+  top: -80rpx;
+  margin: 0 20rpx 10rpx;
+}
+
+.multiText {
+  width: 100%; /*规定盒子的大小，也可以是固定的值*/
+  overflow: hidden; /*隐藏超出的内容*/
+  text-overflow: ellipsis;
+  word-break: break-all; /*破坏所有类型的字符对象*/
+  display: -webkit-box; /*对象作为伸缩盒子模型显示*/
+  -webkit-box-orient: vertical; /*设置或检索伸缩盒对象的子元素的排列方式*/
+  -webkit-line-clamp: 2; /*显示的行数*/
+}
+
+.real_time_tickets {
+  background-color: #ddd;
+  height: 150rpx;
+  width: 100%;
+  position: relative;
+  top: -80rpx;
+  padding: 15rpx 20rpx;
+}
+
+.actor_list {
+  position: relative;
+  top: -80rpx;
+}
+
+.scroll-view_H {
+  width: 100%;
+}
+
+.scroll-view-item_HH {
+  display: inline-block;
+  text-align: center;
+  margin: 10rpx;
+}
+
+.stage_photos {
+  position: relative;
+  top: -80rpx;
+}
+
+.stage_photos_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.film_comment {
+  position: relative;
+  top: -80rpx;
+  margin: 0 20rpx 10rpx;
+}
+

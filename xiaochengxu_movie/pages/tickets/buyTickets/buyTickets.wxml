@@ -1,0 +1,113 @@
+<!--pages/tickets/buyTickets/buyTickets.wxml-->
+<import src="../../../components/badge/badge.wxml" />
+<import src="../../../components/arrowLeft/arrowLeft.wxml" />
+<import src="../../../components/commentList/commentList.wxml" />
+<import src="../../../components/fixedBottom/fixedBottom.wxml" />
+
+<video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+  controls style="height:300rpx;width:100%" objectFit="fill"></video>
+<!--影片简介-->
+<view class="film_list_item">
+  <view>
+    <image src="" class="film_poster" />
+  </view>
+  <view class="film_list_item_text">
+    <view class="film_list_item_left">
+      <template is="badge" data="{{title:'复仇者联盟3',icon:'3D'}}" />
+      <view>Avenger alliance 3</view>
+      <view>剧情/运动/悬疑</view>
+      <view class="film_icon_row">
+        <view>
+          <icon type="message" />
+          <text>292929</text>
+        </view>
+        <view>
+          <icon type="message" />
+          <text>172665</text>
+        </view>
+        <view>
+          <icon type="message" />
+          <text>123分钟</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--评分等-->
+<view class="middle_list_item">
+  <view>
+    <view>
+      <text style="color: #ec4; font-size: 34rpx;">9.1</text> * * * * *</view>
+    <view>用户评分36,3777人</view>
+  </view>
+  <view>
+    <view>
+      <text style="color: #ec4; font-size: 34rpx;">8.6分</text>
+    </view>
+    <view>专业评分36人</view>
+  </view>
+  <view>
+    <view>
+      <text style="color: #ec4; font-size: 34rpx;">28378</text>
+    </view>
+    <view>想看人数</view>
+  </view>
+</view>
+<!--影片详情-->
+<view class="film_detail_text">
+  <view>
+    <title style="font-weight: 900">影片详情</title>
+  </view>
+  <view>
+    <text class="multiText">影片详情影片详情影片详情影片详情影片详情影片详情影片详情影片详情影片详情影片详情影片详情影片详情影片详情影片详情影片详情ABCDENFHIEGOGPQW.</text> —
+    <text style="color: blue">展开</text>
+  </view>
+</view>
+<!--实时票房信息-->
+<view class="real_time_tickets">
+  <view style="font-weight: 900">实时票房</view>
+  <view>今日实时票房：1333万元</view>
+  <view>总票房：50亿元</view>
+</view>
+<!--演员信息-->
+<view class="actor_list">
+  <template is="arrowLeft" data="{{left:'演员', right: '查看16位演员'}}" />
+  <scroll-view class="scroll-view_H" scroll-x="true" style="height:360rpx; white-space: nowrap;">
+    <block wx:for="{{[0,1,2,3]}}" wx:key="index">
+      <view id="green1" class="scroll-view-item_HH ">
+        <image src="" style="width: 170rpx; height:200rpx;background-color:#ccc;" />
+        <view>凯特-布兰切特</view>
+        <view>饰 继母</view>
+      </view>
+    </block>
+  </scroll-view>
+</view>
+<!--剧照信息-->
+<view class="stage_photos">
+  <template is="arrowLeft" data="{{left:'剧照', right: '查看726张剧照'}}" />
+  <view class="stage_photos_list">
+    <image src="" style="display:block;width: 340rpx; height:240rpx; background-color:#ccc;margin: 15rpx;" />
+    <image src="" style="display:block;width: 340rpx; height:240rpx; background-color:#ccc;margin: 15rpx;" />
+    <image src="" style="display:block;width: 340rpx; height:240rpx; background-color:#ccc;margin: 15rpx;" />
+    <image src="" style="display:block;width: 340rpx; height:240rpx; background-color:#ccc;margin: 15rpx;" />
+  </view>
+</view>
+<!--视频-->
+<view class="stage_photos">
+  <template is="arrowLeft" data="{{left:'视频', right: '查看78部视频'}}" />
+  <view class="stage_photos_list">
+    <video id="myVideo1" controls objectFit="fill" src="" style="width: 340rpx; height:200rpx; margin: 15rpx;" />
+    <video id="myVideo2" controls objectFit="fill" src="" style="width: 340rpx; height:200rpx; margin: 15rpx;" />
+    <video id="myVideo3" controls objectFit="fill" src="" style="width: 340rpx; height:200rpx; margin: 15rpx;" />
+    <video id="myVideo4" controls objectFit="fill" src="" style="width: 340rpx; height:200rpx; margin: 15rpx;" />
+    <video id="myVideo6" controls objectFit="fill" src="" style="width: 340rpx; height:200rpx; margin: 15rpx;" />
+    <video id="myVideo7" controls objectFit="fill" src="" style="width: 340rpx; height:200rpx; margin: 15rpx;" />
+  </view>
+</view>
+<!--影片评论-->
+<view class="film_comment">
+  <view style="font-weight: 900">影片评论</view>
+  <template is="commentList" data="" />
+</view>
+<!--购买导航-->
+<template is="fixedBottom" data="{{left:'32', right:'现在买',color:'#37c'}}" />

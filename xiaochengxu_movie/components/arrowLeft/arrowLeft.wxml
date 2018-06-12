@@ -1,0 +1,13 @@
+<template name="arrowLeft">
+  <view class="scroll_top">
+    <view class="section__title">
+      <view class="left_mark" />
+      <text>{{ left }}</text>
+    </view>
+    <navigator url="{{url}}" open-type="switchTab" hover-class="other-navigator-hover">
+      <view class="section_title_right">
+        <text>{{ right }}</text>
+        <view class="right_arrow" /></view>
+    </navigator>
+  </view>
+</template>

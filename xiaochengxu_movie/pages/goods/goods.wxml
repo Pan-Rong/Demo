@@ -1,0 +1,22 @@
+<!--pages/goods/goods.wxml-->
+<import src="../../components/goodsFilmList/filmList.wxml" />
+
+<view class="body">
+  <view class="nav bc_white">
+    <view class="{{selectedMeal?'blue':'default'}}" bindtap="selectedMeal">套餐</view>
+    <view class="{{selectedDrunk?'blue':'default'}}" bindtap="selectedDrunk">饮料</view>
+    <view class="{{selectedOther?'blue':'default'}}" bindtap="selectedOther">其他</view>
+  </view>
+  <!--套餐页面-->
+  <view class="{{ selectedMeal? 'meal_list' : 'hidden' }}">
+    <template is="filmList" data="{{...obj,item1}}" />
+  </view>
+  <!--饮料页面-->
+  <view class="{{ selectedDrunk? 'meal_list' : 'hidden' }}"></view>
+  <!--其他页面-->
+  <view class="{{ selectedOther? 'meal_list' : 'hidden' }}"></view>
+  <view class="">
+    <view style=""></view>
+    <view style=""></view>
+  </view>
+</view>

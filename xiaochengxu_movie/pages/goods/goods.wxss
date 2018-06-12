@@ -1,0 +1,36 @@
+/* pages/goods/goods.wxss */
+@import "../../components/goodsFilmList/filmList.wxss";
+.nav {
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.default {
+  line-height: 60rpx;
+  text-align: center;
+  flex: 1;
+  border-right: 1px solid gainsboro;
+  color: #000;
+  font-size: 28rpx;
+}
+
+.blue {
+  line-height: 60rpx;
+  text-align: center;
+  color: #29f;
+  flex: 1;
+  border-right: 1px solid gainsboro;
+  font-size: 28rpx;
+}
+
+.show {
+}
+
+.hidden {
+  display: none;
+}
+.meal_list{
+  margin: 50rpx 20rpx;
+}

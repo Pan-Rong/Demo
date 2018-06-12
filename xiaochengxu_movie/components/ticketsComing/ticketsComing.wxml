@@ -1,0 +1,20 @@
+<template name="ticketsComing">
+  <view wx:for="{{data}}" wx:key="index">
+    <view class="coming_list_item">
+      <view>
+        <image src="" style="width: 170rpx; height:200rpx;background-color:#ccc;" />
+      </view>
+      <view class="coming_list_item_text">
+        <view class="move_list_item_left">
+          <view>{{data[index].title}}</view>
+          <view>{{data[index].peopleCount}}</view>
+          <view>{{data[index].label}}</view>
+          <view>{{data[index].director}}</view>
+        </view>
+        <view class="coming_list_item_right">
+          <button class="buy_tickets" bindtap="presell" id="{{flg}}_{{index}}">{{data[index].abc}}</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

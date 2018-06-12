@@ -1,0 +1,29 @@
+<template name="commentList">
+  <block wx:for="{{[0,1,2,3]}}" wx:key="index">
+    <view class="film_comment_item">
+      <view class="film_comment_user">
+        <image src="" style="display: block; width: 80rpx; height :80rpx; border-radius: 40rpx; background-color: #ccc" />
+        <view style="margin-left:10rpx;">
+          <view>MISS YOU</view>
+          <view>* * * * *
+            <text style="color: #ec4;"> 9.1</text>
+          </view>
+        </view>
+      </view>
+      <view class="film_comment_content">
+        <view>
+          <text>影评内容，测试用例,测试用例，影评内容，测试用例，影评内容，影评内容，测试用例，影评内容，测试用例，影评内容，测试用例，</text>
+        </view>
+        <view class="film_comment_content_footer">
+          <view>1分钟前</view>
+          <view class="film_comment_content_footer_right">
+            <view>
+              <icon />留言：93</view>
+            <view style="margin-left: 15rpx;">
+              <icon />点赞：93</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</template>

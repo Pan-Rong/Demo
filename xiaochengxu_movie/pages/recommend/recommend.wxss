@@ -1,0 +1,97 @@
+/* pages/home/home.wxss */
+@import "../../components/arrowLeft/arrowLeft.wxss";
+
+.left_location {
+  position: absolute;
+  z-index: 1000;
+}
+
+.search_icon {
+  display: block;
+  position: absolute;
+  top: 30rpx;
+  left: 110rpx;
+  color: white;
+  z-index: 500;
+}
+
+.search_input {
+  position: absolute;
+  width: 500rpx;
+  height: 80rpx;
+  border-radius: 12rpx;
+  padding-left: 80rpx;
+  top: 10rpx;
+  margin: 0 90rpx;
+  color: white;
+  background-color: #000;
+  opacity: 0.3;
+}
+
+.section_middle {
+  width: 750rpx;
+  height: 150rpx;
+  border-bottom: 3rpx solid #aaa;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section_middle_block {
+  height: 100rpx;
+  width: 50%;
+  margin-top: 35rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section_middle_block_left {
+  border-right: 3rpx solid #aaa;
+}
+
+.section_middle_block_right {
+  border-left: 3rpx solid #aaa;
+}
+
+.section_container {
+  width: 100%;
+  height: 300rpx;
+  margin-top: 40rpx;
+}
+
+
+.scroll-view_H {
+  width: 100%;
+}
+
+.scroll-view-item_H {
+  width: 240rpx;
+  height: 240rpx;
+  display: inline-block;
+  margin: 10rpx;
+}
+
+.scroll-view-item_HH {
+  width: 240rpx;
+  height: 240rpx;
+  display: inline-block;
+  margin: 10rpx;
+  text-align: center;
+}
+
+.bc_green {
+  background: green;
+}
+
+.bc_red {
+  background: red;
+}
+
+.bc_blue {
+  background: blue;
+}
+
+.bc_yellow {
+  background: yellow;
+}

@@ -1,0 +1,3 @@
+/* pages/feature/feature.wxss */
+@import "../../components/goodsFilmList/filmList.wxss";
+

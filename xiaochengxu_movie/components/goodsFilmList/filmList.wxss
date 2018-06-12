@@ -1,0 +1,30 @@
+/* pages/feature/feature.wxss */
+.meal_list_item {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx auto;
+}
+.meal_list_item_text {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 10rpx;
+  font-size: 28rpx;
+}
+
+.meal_list_item_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200rpx;
+}
+.meal_list_item_right{
+  display: flex;
+  flex-direction: row;
+  align-content: center ;
+  padding-top: 60rpx;
+}
+.meal_item_count{
+  margin: 0 10rpx;
+}

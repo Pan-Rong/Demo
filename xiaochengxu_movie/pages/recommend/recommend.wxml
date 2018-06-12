@@ -1,0 +1,57 @@
+<!--pages/home/home.wxml-->
+<import src="../../components/arrowLeft/arrowLeft.wxml" />
+<view class="left_location">苏州</view>
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height: 260rpx;">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item}}" />
+    </swiper-item>
+  </block>
+</swiper>
+<!--搜索框-->
+<view class="section">
+  <icon type="search" class="search_icon" color="#ccc" />
+  <input type="text" class="search_input" placeholder='search' auto-focus />
+</view>
+<!--横排显示-->
+<view class="section_middle">
+  <view class="section_middle_block section_middle_block_left">
+    <view>
+      <view>点播大厅放映区</view>
+      <view style="font-weight:300;font-size:26rpx;text-align:center;">任意影片自由放</view>
+    </view>
+    <image style="width: 70rpx; height:70rpx" src="../../comm/images/my_icon.png"></image>
+  </view>
+  <view class="section_middle_block section_middle_block_right">
+    <view>
+      <view>影院大厅热聊区</view>
+      <view style="font-weight:300;font-size:26rpx;text-align:center;">单身狗放开撩妹</view>
+    </view>
+    <image style="width: 70rpx; height:70rpx;" src="../../comm/images/my_icon.png"></image>
+  </view>
+</view>
+<!--热映电影-->
+<view class="section_container">
+  <template is="arrowLeft" data="{{left: '热映电影' ,right: '我在XX等你哦', url:'../tickets/tickets' }}"></template>
+
+  <scroll-view class="scroll-view_H" scroll-x="true" style="height:220rpx; white-space: nowrap;">
+    <view id="green" class="scroll-view-item_H bc_green"></view>
+    <view id="red" class="scroll-view-item_H bc_red"></view>
+    <view id="yellow" class="scroll-view-item_H bc_yellow"></view>
+    <view id="blue" class="scroll-view-item_H bc_blue"></view>
+  </scroll-view>
+</view>
+<!--送餐入座-->
+<view class="section_container">
+  <template is="arrowLeft" data="{{left: '送餐入座' ,right: '渴了饿了 随叫随到', url:'../goods/goods' }}"></template>
+
+  <scroll-view class="scroll-view_H" scroll-x="true" style="height:360rpx; white-space: nowrap;">
+    <block wx:for="{{[0,1,2,3]}}" wx:key="index">
+      <view id="green1" class="scroll-view-item_HH ">
+        <image src="" style="width: 240rpx; height:240rpx;background-color:#777;" />
+        <view>肯德基全家桶</view>
+        <view>￥ 32</view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

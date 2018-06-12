@@ -1,0 +1,89 @@
+/* pages/tickets/selectedSeats/selectSeats.wxss */
+@import "../../../components/fixedBottom/fixedBottom.wxss";
+
+.seat_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 65rpx;
+  padding-top: 20rpx;
+  border-top: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.seat_top_tips {
+  width: 150rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.seat_top_tips_icon {
+  height: 40rpx;
+  width: 40rpx;
+  background-color: #eee;
+  border: 1rpx solid #aaa;
+}
+
+.seat_middle_container {
+  height: 780rpx;
+  width: 750rpx;
+  overflow: auto;
+}
+
+.seat_middle {
+  background-color: #ddd;
+  height: 780rpx;
+  width: 750rpx;
+}
+
+.seat_middle_title {
+  width: 100%;
+  text-align: center;
+}
+
+.seat_middle_detail {
+  display: flex;
+  flex-direction: row;
+  margin-top: 90rpx;
+}
+
+.seat_middle_column {
+  background-color: #aaa;
+  border-radius: 10rpx;
+  text-align: center;
+}
+
+.seat_middle_row {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50rpx;
+  background-color: #aaa;
+  border-radius: 10rpx;
+}
+
+.seat_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.seat_list_icon {
+  height: 35rpx;
+  width: 35rpx;
+  border: 1rpx solid #aaa;
+}
+
+.seat_middle_info {
+  display: flex;
+  flex-direction: row;
+}
+
+.seat_middle_info_item {
+  width: 150rpx;
+  height: 80rpx;
+  border: 1rpx solid #aaa;
+  margin: 25rpx 10rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border-radius: 15rpx;
+}

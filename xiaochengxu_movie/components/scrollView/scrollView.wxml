@@ -1,0 +1,12 @@
+<template name="scrollView">
+  <scroll-view class="scroll-view_H" scroll-x="true" style="height:360rpx; white-space: nowrap;">
+    <block wx:for="{{[0,1,2,3]}}" wx:key="index">
+      <view id="green1" class="scroll-view-item_HH ">
+        <image src="" style="width: 180rpx; height:200rpx;background-color:#ccc;" />
+        <view>魔兽</view>
+        <view>3098人想看</view>
+        <view>6.1上映</view>
+      </view>
+    </block>
+  </scroll-view>
+</template>
