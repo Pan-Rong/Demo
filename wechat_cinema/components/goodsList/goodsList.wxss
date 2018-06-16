@@ -1,0 +1,52 @@
+/* pages/feature/feature.wxss */
+
+.meal_list_item {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx auto;
+  padding-bottom: 15rpx;
+  border-bottom: 1rpx solid #444;
+}
+
+.meal_list_item_text {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 10rpx;
+  font-size: 28rpx;
+}
+
+.meal_list_imges {
+  width: 260rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  background-color: #ccc;
+}
+
+.meal_list_item_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20rpx;
+}
+
+.meal_list_item_right {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  padding-top: 100rpx;
+}
+
+.meal_item_icon {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.meal_item_count {
+  margin: 0 20rpx;
+  color: #f08519;
+  font-size: 1.3em;
+  line-height: 45rpx;
+  text-align: center;
+}

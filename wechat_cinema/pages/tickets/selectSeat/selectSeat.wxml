@@ -1,0 +1,4 @@
+<!--pages/tickets/selectSeat/selectSeat.wxml-->
+<view class="seats_container">
+  暂时未确定座位信息
+</view>

@@ -1,0 +1,26 @@
+.cmp_session_list_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25rpx 10rpx;
+  padding: 15rpx 20rpx;
+  font-size: 0.8em;
+  text-align:center;
+  line-height: 40rpx;
+  border-radius: 5rpx;
+  background-color: #36373B;
+}
+
+.cmp_session_text_aaa {
+  color: #aaa;
+}
+
+.cmp_session_btn {
+  width: 150rpx;
+  height: 60rpx;
+  font-size: 1.2em;
+  line-height: 60rpx;
+  border-radius: 8rpx;
+  background-color: #f08519;
+}

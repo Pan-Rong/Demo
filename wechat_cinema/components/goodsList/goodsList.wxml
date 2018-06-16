@@ -1,0 +1,22 @@
+<template name="goodsList">
+  <view wx:for="{{data}}" wx:key="index">
+    <view class="meal_list_item" >
+        <image src="" class="meal_list_imges" />
+      <view class="meal_list_item_text">
+        <view class="meal_list_item_left">
+          <view style="font-size: 1.1em">{{data[index].title1}}</view>
+          <view style="color:#aaa;">{{data[index].title2}}</view>
+          <view style="color:#F08519">
+            <text>￥</text>
+            <text style="font-size:1.3em"> {{data[index].price}} </text>
+          </view>
+        </view>
+        <view class="meal_list_item_right">
+          <image src="../../../comm/images/error.png"  class="meal_item_icon"bindtap="decreaseItem" id="{{index}}_"/>
+          <view class="meal_item_count"> {{data[index].count}} </view>
+          <image src="../../../comm/images/add.png"  class="meal_item_icon"  bindtap="addItem" id="{{index}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

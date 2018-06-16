@@ -1,0 +1,117 @@
+/* pages/tickets/confirmOrder/confirmOrder.wxss */
+@import "../../../components/miniBadge/miniBadge.wxss";
+@import "../../../components/goodsList/goodsList.wxss";
+
+.order_top {
+  margin: 15rpx 10rpx;
+  padding: 15rpx;
+  border-radius: 10rpx;
+  font-size: 0.9em;
+  color: #aaa;
+  background-color: #36373b;
+  border: 1rpx solid #2a2a2a;
+}
+
+.order_top_text {
+  margin: 0 0 0 30rpx;
+  padding: 0 15rpx;
+  border-right: 1rpx solid #888;
+}
+
+.order_top_line {
+  margin: -14rpx 20rpx;
+  border-bottom: 4rpx dashed #717275;
+}
+
+.order_top_btm {
+  display: flex;
+  flex-direction: row;
+}
+
+.order_top_btm_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.order_top_btm_image {
+  margin: auto 10rpx;
+  width: 35rpx;
+  height: 35rpx;
+  border-radius: 20rpx;
+}
+
+.order_middle_top {
+  padding: 15rpx;
+  color: #aaa;
+  background-color: #36373b;
+  border: 1rpx solid #2a2a2a;
+}
+
+.order_middle_tt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15rpx;
+  border-bottom: 1rpx solid #444;
+}
+
+.order_middle_ttleft {
+  display: flex;
+  flex-direction: row;
+}
+
+.order_middle_tb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx 0;
+}
+
+.order_middle_btm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15rpx 0;
+  padding: 15rpx;
+  background-color: #36373b;
+  border: 1rpx solid #2a2a2a;
+}
+
+.order_middle_btmleft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.order_middle_btmImg {
+  width: 70rpx;
+  height: 55rpx;
+  margin-right: 20rpx;
+}
+
+.meal_top_title {
+  margin-top: 30rpx;
+  padding: 10rpx 20rpx;
+  border-bottom: 1rpx solid #444;
+}
+
+.meal_list {
+  margin: 30rpx 20rpx 100rpx;
+}
+
+.order_fix_btm {
+  position: fixed;
+  bottom: 0rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100rpx;
+  width: 100%;
+  line-height: 100rpx;
+  text-align: center;
+  background-color: #484848;
+  z-index: 500;
+}

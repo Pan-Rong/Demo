@@ -1,0 +1,34 @@
+<import src="../miniBadge/miniBadge.wxml" />
+<template name="cinemaList">
+  <block wx:for="{{[0,1]}}" wx:key="{{index}}">
+    <view class="cmp_cinema_container" bindtap='selectSession' id="cinema_{{index}}">
+      <view class="cmp_cinema_betwn" style="margin-top: 10rpx;">
+        <view class="cmp_cinema_row">
+          <view style="font-weight:900">岽锦泰禾影城1店</view>
+          <view class="cmp_cinema_price"> {{price}}</view>
+          <view class="cmp_cinema_stext" style="line-height: 60rpx;">元起</view>
+          <template is="miniBadge" data="{{icon:'VIP卡',className: ' background-color:#1D8FE1'}}" />
+        </view>
+        <image src="../../../comm/images/star_active.png" class="cmp_cinema_image" />
+      </view>
+      <view class="cmp_cinema_row cmp_cinema_betwn">
+        <text class="cmp_cinema_ltext">  吴中区澄湖路888号恒润国际商务广场B座3003</text>
+        <view class="cmp_cinema_stext"> 100m</view>
+      </view>
+      <view class="cmp_cinema_row">
+        <block wx:for="{{['观影小食','可停车','杜比厅']}}" wx:key="{{index}}">
+          <view class="cmp_cinema_text_label">{{item}}</view>
+        </block>
+      </view>
+      <view class="cmp_cinema_row">
+        <template is="miniBadge" data="{{icon: '卡',className: ' background-color:#1D8FE1'}}" />
+        <view class="cmp_cinema_stext cmp_cinema_stext_height">VIP首单特惠，最高减10元</view>
+      </view>
+      <view class="cmp_cinema_row">
+        <template is="miniBadge" data="{{icon: '惠',className: ' background-color:#F08519'}}" />
+        <view class="cmp_cinema_stext cmp_cinema_stext_height">复仇者联盟3特惠</view>
+      </view>
+    </view>
+    <view class="cmp_cinema_container_btm"></view>
+  </block>
+</template>

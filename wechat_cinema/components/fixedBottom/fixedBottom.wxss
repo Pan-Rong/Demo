@@ -1,0 +1,14 @@
+.cmp_fixed_bottom {
+  position: fixed;
+  bottom: 0rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 90rpx;
+  width: 100%;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 1.1em;
+  background-color: #f08519;
+  z-index: 500;
+}

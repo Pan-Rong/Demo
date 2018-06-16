@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/tickets/tickets",
+    "pages/tickets/finishOrder/finishOrder",
+    "pages/tickets/confirmOrder/confirmOrder",
+    "pages/tickets/selectSeat/selectSeat",
+    "pages/tickets/selectSession/selectSession",
+    "pages/tickets/selectCinema/selectCinema",
+    "pages/recommend/recommend",
+    "pages/recommend/chatSecret/chatSecret",
+    "pages/recommend/chatTogether/chatTogether",
+    "pages/recommend/watchTogether/watchTogether",
+    "pages/goods/goods",
+    "pages/tickets/buyTickets/buyTickets",
+    "pages/feature/feature",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2c2c35",
+    "navigationBarTitleText": "推荐",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#2c2c35;",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#F08519",
+    "backgroundColor": "#2c2c35",
+    "borderStyle": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/recommend/recommend",
+        "iconPath": "comm/images/recomment.png",
+        "selectedIconPath": "comm/images/recomment_active.png",
+        "text": "推荐"
+      },
+      {
+        "pagePath": "pages/tickets/tickets",
+        "iconPath": "comm/images/ticket.png",
+        "selectedIconPath": "comm/images/ticket_active.png",
+        "text": "购票"
+      },
+      {
+        "pagePath": "pages/feature/feature",
+        "iconPath": "comm/images/fire.png",
+        "selectedIconPath": "comm/images/fire_active.png"
+      },
+      {
+        "pagePath": "pages/goods/goods",
+        "iconPath": "comm/images/goods.png",
+        "selectedIconPath": "comm/images/goods_active.png",
+        "text": "卖品"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "comm/images/my_icon.png",
+        "selectedIconPath": "comm/images/my_icon_active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "debug": true
+}

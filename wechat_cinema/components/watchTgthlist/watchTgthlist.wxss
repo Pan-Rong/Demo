@@ -1,0 +1,52 @@
+.tgth_list {
+  margin: 10rpx;
+  border-bottom: 2rpx solid #444;
+}
+
+.tgth_list_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25rpx 0;
+}
+
+.tgth_list_item_left {
+  display: flex;
+  flex-direction: row;
+}
+
+.tgth_list_avatar {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #777;
+  border-radius: 50rpx;
+}
+.tgth_list_avatar_sex {
+  display: block;
+  border-radius: 20rpx;
+  position: relative;
+  width: 25rpx;
+  height: 25rpx;
+  padding: 5rpx;
+  top: 70rpx;
+  left: -35rpx;
+  background-color: #fff;
+}
+
+.tgth_list_info {
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tgth_list_button {
+  width: 150rpx;
+  height: 60rpx;
+  text-align: center;
+  margin: 0 20rpx;
+  line-height:60rpx;
+  border: 2rpx solid #ccc;
+  border-radius: 10rpx;
+}

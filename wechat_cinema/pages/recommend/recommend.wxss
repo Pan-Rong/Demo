@@ -1,0 +1,154 @@
+/* pages/recommend/recommend.wxss */
+@import "../../components/arrowLeft/arrowLeft.wxss";
+@import "../../components/recomFilmInfo/recomFilmInfo.wxss";
+
+page {
+  color: #ddd;
+}
+
+.section_top {
+  display: flex;
+  flex-direction: row;
+  border-top: 1rpx solid #333;
+}
+
+.left_location {
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  z-index: 1000;
+}
+
+.search_icon {
+  display: block;
+  position: relative;
+  left: 15rpx;
+  top: 20rpx;
+  color: #ccc;
+  z-index: 500;
+}
+
+.search_input {
+  position: absolute;
+  width: 450rpx;
+  height: 60rpx;
+  border-radius: 50rpx;
+  padding-left: 60rpx;
+  text-align: center;
+  top: 10rpx;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.section_middle {
+  width: 750rpx;
+  height: 230rpx;
+  border-bottom: 10rpx solid #444;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+.section_middle_text {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 350rpx;
+  background-color: #f08519;
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+  top: 170rpx;
+}
+
+.section_middle_block {
+  height: 180rpx;
+  width: 350rpx;
+  margin: 35rpx 10rpx;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+
+.tickets_box_office {
+  margin: 20rpx 20rpx 30rpx;
+  border-radius: 15rpx;
+  padding: 10rpx 20rpx;
+  color: #aaa;
+  font-size: 0.9em;
+  background-color: #37373F;
+}
+
+.recom_show_avatar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 15rpx;
+}
+
+.recom_user_avatar {
+  height: 100rpx;
+  width: 100rpx;
+  margin: 10rpx;
+  background-color: #777;
+  border-radius: 50rpx;
+}
+
+.recom_user_sex {
+  display: block;
+  border-radius: 20rpx;
+  position: absolute;
+  width: 25rpx;
+  height: 25rpx;
+  padding: 5rpx;
+  top: 80rpx;
+  left: 75rpx;
+  background-color: #fff;
+}
+
+.section_container {
+  width: 100%;
+}
+
+.scroll-view_H {
+  height: 400rpx;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.scroll-view-item_H {
+  text-align: center;
+  display: inline-block;
+  margin: 0 10rpx 10rpx;
+}
+
+.scroll-view-item_HH {
+  display: inline-block;
+  margin: 0 10rpx 10rpx;
+  text-align: center;
+}
+
+.bc_green {
+  background: green;
+}
+
+.bc_red {
+  background: red;
+}
+
+.bc_blue {
+  background: blue;
+}
+
+.bc_yellow {
+  background: yellow;
+}
+
+.section_bottom_title {
+  width: 100%;
+  margin-bottom: 10rpx;
+  text-align: center;
+  font-size: 0.8em;
+  color: #aaa;
+}

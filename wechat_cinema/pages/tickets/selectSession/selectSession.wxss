@@ -1,0 +1,166 @@
+/* pages/tickets/selectSession/selectSession.wxss */
+@import "../../../components/miniBadge/miniBadge.wxss";
+@import "../../../components/sessionList/sessionList.wxss";
+
+.session_container {
+}
+
+.session_con_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1rpx solid #444;
+  padding: 15rpx 20rpx;
+}
+
+.session_top_left {
+  display: flex;
+  flex-direction: column;
+}
+
+.session_top_right {
+  position: relative;
+  top: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.session_con_middle {
+  padding: 0 0 15rpx;
+  height: 400rpx;
+  border-bottom: 1rpx solid #444;
+}
+
+.session_con_middle_bcg {
+  background-color: #444;
+  position: relative;
+  top: -400rpx;
+  height: 310rpx;
+  z-index: -500;
+}
+
+.session_con_middle_bcg_mark {
+  position: relative;
+  top: -425rpx;
+  left: 390rpx;
+  width: 0;
+  height: 0;
+  border-top: 15rpx solid transparent;
+  border-right: 15rpx solid transparent;
+  border-left: 15rpx solid transparent;
+  border-bottom: 15rpx solid #2c2c35;
+}
+
+.session_scroll_view_H {
+  height: 400rpx;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.session_scroll_view_item_H {
+  position: relative;
+  padding: 55rpx 0 0;
+  text-align: center;
+  display: inline-block;
+  margin: 0 10rpx 10rpx;
+}
+
+.session_scroll_image {
+  width: 180rpx;
+  height: 240rpx;
+  background-color: #777;
+  border-radius: 15rpx;
+}
+
+.session_scroll_imageScale {
+  position: relative;
+  top: -13rpx;
+  transform: scale(1.2, 1.1);
+  z-index: 500;
+}
+
+.session_scroll_visible {
+  position: relative;
+  width: 220rpx;
+  left: -100rpx;
+  visibility: visible;
+}
+
+.session_scroll_hidden {
+  width: 180rpx;
+  visibility: hidden;
+}
+
+.nav {
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  border: 1rpx solid #444;
+  margin-bottom: 40rpx;
+}
+
+.session_scroll_nav_H {
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.session_scroll_nav_item_H {
+  text-align: center;
+  display: inline-block;
+}
+
+.default {
+  line-height: 70rpx;
+  text-align: center;
+  width: 200rpx;
+  font-size: 1.1em;
+}
+
+.hidden {
+  display: none;
+}
+
+.session_title_bckg {
+  height: 70rpx;
+  width: 100%;
+  background-color: #37373f;
+}
+
+.session_title_bckg_innerfrm {
+  position: relative;
+  top: 15rpx;
+  height: 40rpx;
+  width: 100%;
+}
+
+.session_scroll__top {
+  display: flex;
+  justify-content: space-between;
+  margin: 20rpx 10rpx;
+}
+
+.session_section__title {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.9em;
+  color: #1d8fe1;
+}
+
+.session_section_title_right {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.8em;
+}
+
+.session_right_arrow {
+  width: 16rpx;
+  height: 16rpx;
+  border-top: 3rpx solid #fff;
+  border-right: 3rpx solid #fff;
+  transform: rotate(45deg);
+  margin: 12rpx 15rpx 0;
+}

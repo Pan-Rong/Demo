@@ -1,0 +1,18 @@
+<!--pages/tickets/selectCinema/selectCinema.wxml-->
+<import src="../../../components/cinemaList/cinemaList.wxml" />
+<view>
+  <view class="nav">
+    <scroll-view class="scroll-view_H" scroll-x="true" style="height:300rpx; white-space: nowrap;">
+      <block wx:for="{{['今天06-16','明天06-16','后天06-17','周一06-18']}}" wx:key="index">
+        <view class="scroll-view-item_H ">
+          <view class="{{selected[index] ?'orange':'default'}}" bindtap="handleSelected" id="{{index}}">{{item}}</view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+  <block wx:for="{{selected}}" wx:key="{{index}}">
+    <view style="display:{{ selected[index] ? 'block':'none' }}">
+      <template is="cinemaList" data="{{price: index}}" />
+    </view>
+  </block>
+</view>

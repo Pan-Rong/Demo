@@ -1,0 +1,17 @@
+.scroll-view_H {
+  height: 400rpx;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.scroll-view-item_H {
+  text-align: center;
+  display: inline-block;
+  margin: 0 10rpx 10rpx;
+}
+
+.scroll-view-item_HH {
+  display: inline-block;
+  margin: 0 10rpx 10rpx;
+  text-align: center;
+}

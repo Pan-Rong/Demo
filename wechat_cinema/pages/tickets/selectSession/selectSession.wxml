@@ -1,0 +1,72 @@
+<!--pages/tickets/selectSession/selectSession.wxml-->
+<import src="../../../components/miniBadge/miniBadge.wxml" />
+<import src="../../../components/sessionList/sessionList.wxml" />
+<view class="session_container">
+  <view class="session_con_top">
+    <view>
+      <view style="font-weight: 800">岽锦泰禾影城1店</view>
+      <view style="color:#aaa;font-size:0.9em;width:610rpx">吴中区澄湖路888号恒润国际商务广场B座3003</view>
+    </view>
+    <view style="width:0;height:40rpx;border-right:1rpx solid #888;"></view>
+    <view style="text-align:center;">
+      <image src="../../../comm/images/location.png" class="session_top_right" />
+      <view style="color:#aaa;font-size:0.9em">定位</view>
+    </view>
+  </view>
+  <!--滑动模块-->
+  <view class="session_con_middle" catchtap='handleImage' catchtouchend='changeScrollImage'>
+    <scroll-view class="session_scroll_view_H" scroll-x="true" style="height: 400rpx;white-space: nowrap;" bindscrolltoupper="filmListUnshift" bindscrolltolower="filmListPop">
+      <block wx:for="{{ filmList }}" wx:key="index">
+        <view class="session_scroll_view_item_H " id="{{'item_'+index}}">
+          <image src="" class="session_scroll_image {{scrollArr[index] ? 'session_scroll_imageScale':''}}" id="{{index}}" />
+          <view class="{{ scrollArr[index] ? 'session_scroll_visible': 'session_scroll_hidden'}}">
+            <view style="margin-top:15rpx;width: 400rpx;">
+              <text style="font-size:1.1em">{{item}}</text>
+              <text style="color:#1D8FE1;font-size:1.1em;padding-left: 15rpx;">9.1</text>
+              <text>分</text>
+            </view>
+            <view style="color:#aaa;width: 400rpx;">
+              <text style="padding: 0 10rpx;border-right:1rpx solid #444;">100分钟</text>
+              <text style="padding: 0 10rpx;border-right:1rpx solid #444;">喜剧</text>
+              <text style="padding: 0 10rpx;">雷佳音 佟丽娅</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+    <view class="session_con_middle_bcg">
+    </view>
+    <view class="session_con_middle_bcg_mark"></view>
+  </view>
+  <!--日期导航-->
+  <view>
+    <scroll-view class="session_scroll_nav_H" scroll-x="true" style="height:60rpx; white-space: nowrap;">
+      <block wx:for="{{['今天06-16','明天06-16','后天06-17','周一06-18']}}" wx:key="index">
+        <view class="session_scroll_nav_item_H">
+          <view class="default" style="color:{{selected[index] ?'#F08519':'#ddd'}}" bindtap="handleSelected" id="{{index}}">{{item}}</view>
+        </view>
+      </block>
+    </scroll-view>
+
+    <view class="session_title_bckg">
+      <view class="session_title_bckg_innerfrm">
+        <view class="session_scroll__top">
+          <view class="session_section__title">
+            <view style="margin-top:-5rpx;">
+              <template is="miniBadge" data="{{icon: 'VIP卡',className: ' background-color:#1D8FE1'}}" />
+            </view>
+            <text>购票享低价，首单2张立减18元</text>
+          </view>
+          <view class="session_section_title_right" bindtap='navgatorToNew' id="">
+            <text style="margin-top:3rpx;">19.9元立即开卡</text>
+            <view class="session_right_arrow"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--场次列表-->
+    <view>
+      <template is="sessionList" data="" />
+    </view>
+  </view>
+</view>

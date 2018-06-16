@@ -1,0 +1,51 @@
+.film_comment_item {
+  border-bottom: 1rpx solid #444;
+  font-size: 0.8em;
+}
+
+.film_comment_user {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15rpx;
+}
+
+.film_comment_user_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20rpx;
+  height: 90rpx;
+}
+
+.film_comment_grade_top {
+  color: #f08519;
+  font-size: 1.1em;
+}
+
+.film_comment_content {
+  margin: 10rpx 10rpx 20rpx;
+}
+
+.film_comment_icon {
+  width: 35rpx;
+  height: 35rpx;
+  margin: 0 10rpx;
+}
+
+.film_comment_content_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10rpx 0;
+  font-size: 0.9em;
+}
+
+.film_comment_content_footer_right {
+  display: flex;
+  flex-direction: row;
+}
+
+.fccfr_row {
+  display: flex;
+  flex-direction: row;
+}

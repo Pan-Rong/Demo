@@ -1,0 +1,112 @@
+/* pages/tickets/tickets.wxss */
+@import "../../components/ticketsPopular/ticketsPopular.wxss";
+@import "../../components/scrollView/scrollView.wxss";
+@import "../../components/ticketsComing/ticketsComing.wxss";
+@import "../../components/arrowLeft/arrowLeft.wxss";
+
+.nav {
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  font-weight: 900;
+  flex-direction: row;
+}
+
+.nav_left_location {
+  width: 200rpx;
+  height: 60rpx;
+  font-weight: 400;
+  color: #888;
+  line-height: 60rpx;
+  text-align: center;
+  z-index: 1000;
+}
+
+.default {
+  line-height: 60rpx;
+  text-align: center;
+  flex: 1;
+  font-size: 28rpx;
+}
+.nav_division{
+  width:0;
+  margin-top:15rpx;
+  height: 30rpx;
+  border: 1px solid #666;
+}
+.orange {
+  line-height: 60rpx;
+  text-align: center;
+  color: #f92;
+  flex: 1;
+  font-size: 28rpx;
+}
+
+.hidden {
+  display: none;
+}
+
+.goods_search {
+  width: 50rpx;
+  margin: 10rpx;
+  color: #000;
+}
+
+.popular_container {
+  margin: 20rpx auto auto;
+}
+
+.popular_top_flg {
+  position: relative;
+  margin: 30rpx auto 90rpx;
+  width: 95%;
+  border: 1rpx solid #333;
+}
+
+.popular_top_flg_right {
+  position: absolute;
+  right: 25rpx;
+  width: 60rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 30rpx;
+  font-size: 0.7em;
+  background-color: #ff4a4a;
+}
+
+.popular_top_flg_btm {
+  position: absolute;
+  right: 5rpx;
+  top: 30rpx;
+  width: 0;
+  height: 0;
+  border-bottom: 30rpx solid #2c2c35;
+  border-right: 50rpx solid transparent;
+  border-top: 30rpx solid transparent;
+  border-left: 50rpx solid transparent;
+}
+
+.move_popular_list {
+  margin: 50rpx 20rpx;
+}
+
+.coming_container {
+  margin: auto;
+}
+
+.coming_title_bckg {
+  height: 70rpx;
+  width: 100%;
+  background-color: #37373f;
+}
+
+.coming_title_bckg_innerfrm {
+  position: relative;
+  top: 15rpx;
+  height: 40rpx;
+  width: 100%;
+}
+
+.coming_film_list {
+  margin: 30rpx 10rpx 10rpx;
+}

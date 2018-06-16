@@ -1,0 +1,13 @@
+<!--pages/recommend/watchTogether/watchTogether.wxml-->
+<import src="../../../components/watchTgthlist/watchTgthlist.wxml" />
+<view class="watch_tgth_top">
+  <view class="watch_tgth_tab" catchtap='handleSelected' >
+    <view class="{{selectedBtn1 ? 'watch_tgth_tab_button1 selected':'watch_tgth_tab_button1'}}" id="btn1" >全部</view>
+    <view class="{{selectedBtn2 ? 'watch_tgth_tab_button2 selected':'watch_tgth_tab_button2'}}" id="btn2">俊男</view>
+    <view class="{{selectedBtn3 ? 'watch_tgth_tab_button3 selected':'watch_tgth_tab_button3'}}" id="btn3">靓女</view>
+  </view>
+  <view>1号厅</view>
+</view>
+<view style="background-color: #37373F; padding-top:1rpx">
+  <template is="watchTgthlist" data="{{ selected: selectedBtn1 ? 'all': selectedBtn2 ? 'boys' : 'girls'}}" />
+</view>

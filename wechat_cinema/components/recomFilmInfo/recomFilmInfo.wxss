@@ -1,0 +1,56 @@
+/* pages/feature/feature.wxss */
+@import "../badge/badge.wxss";
+
+.recom_film_item {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 10rpx;
+  border-bottom: 1rpx solid #333;
+}
+
+.recom_film_item_text {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 20rpx;
+  font-size: 0.8em;
+  color: #aaa;
+  position: relative;
+}
+
+.recom_film_item_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 250rpx;
+}
+.recom_film_item_right {
+  position: absolute;
+  top: 120rpx;
+  right: 30rpx;
+  width: 170rpx;
+  height: 120rpx;
+  border-radius: 15rpx;
+  text-align: center;
+  color: #ddd;
+  background-color: #f08519;
+}
+
+.recom_film_count {
+  margin: 0 10rpx;
+}
+
+.recom_filmde_text {
+  display: flex;
+  flex-direction: row;
+}
+
+.right_arrow {
+  width: 16rpx;
+  height: 16rpx;
+  border-top: 3rpx solid #fff;
+  border-right: 3rpx solid #fff;
+  transform: rotate(45deg);
+  margin: 12rpx;
+}

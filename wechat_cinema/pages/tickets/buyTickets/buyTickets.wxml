@@ -1,0 +1,116 @@
+<!--pages/tickets/buyTickets/buyTickets.wxml-->
+<import src="../../../components/badge/badge.wxml" />
+<import src="../../../components/arrowLeft/arrowLeft.wxml" />
+<import src="../../../components/commentList/commentList.wxml" />
+<import src="../../../components/fixedBottom/fixedBottom.wxml" />
+
+<video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+  controls style="height:300rpx;width:100%" objectFit="fill"></video>
+<view>
+  <!--影片简介-->
+  <view class="film_list_item">
+    <view>
+      <image src="" class="film_poster" />
+    </view>
+    <view class="film_list_item_text">
+      <view class="film_list_item_left">
+        <template is="badge" data="{{title:'复仇者联盟3：无限战争',icon:'3D'}}" />
+        <view>Avenger alliance 3</view>
+        <view>剧情/运动/悬疑</view>
+        <view class="film_icon_row">
+          <view class="film_icon_row_frm">
+            <image src="../../../comm/images/eye.png" class="fir_inner_image" />
+            <text class="fir_inner_text">292929</text>
+          </view>
+          <view class="film_icon_row_frm">
+            <image src="../../../comm/images/comment.png" class="fir_inner_image" />
+            <text class="fir_inner_text">172665</text>
+          </view>
+          <view class="film_icon_row_frm">
+            <image src="../../../comm/images/time.png" class="fir_inner_image" />
+            <text class="fir_inner_text">123分钟</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--评分-->
+  <view class="film_grade">
+    <view class="middle_film_grade">
+      <view>
+        <view class="middle_film_grade_top">9.1
+          <block wx:for="{{[0,1,2,3,4]}}" wx:key="{{index}}">
+            <image src="../../../comm/images/star_active.png" class="middle_film_grade_icon" />
+          </block>
+        </view>
+        <view class="middle_film_grade_bottom">评分人数36,3777人</view>
+      </view>
+      <view>
+        <view class="middle_film_grade_top">8.6分</view>
+        <view class="middle_film_grade_bottom">专业评分</view>
+      </view>
+      <view>
+        <view class="middle_film_grade_top">28378</view>
+        <view class="middle_film_grade_bottom">想看人数</view>
+      </view>
+    </view>
+    <view class="bottom_film_grade">
+      <view class="middle_film_grade_button">
+        <image src="../../../comm/images/heart.png" class="middle_film_grade_icon" />
+        <text style="margin-left: 20rpx;">想看</text>
+      </view>
+      <view class="middle_film_grade_button">
+        <image src="../../../comm/images/star.png" class="middle_film_grade_icon" />
+        <text style="margin-left: 20rpx;">看过</text>
+      </view>
+    </view>
+  </view>
+  <!--剧情简介-->
+  <template is="arrowLeft" data="{{left:'剧情简介', arrowMark:false}}" />
+  <view class="film_story_info">
+    <text class="multiText">《复仇者联盟3：无限战争》是漫威电影宇宙10周年的历史性集结，将为影迷们带来史诗版的终极对决。面对灭霸突然发起的闪电袭击，复仇者联盟及其所有超级英雄联盟必须全力以赴，超级英雄联盟必须全力以赴</text>
+    <text style="font-weight: 900;color:#1D8FE1">展开</text>
+  </view>
+  <view class="tickets_box_office">
+    <view style="font-size:1em;color:#ddd;font-weight:800;line-height:60rpx">实时票房</view>
+    <view>今日实时票房：1888万</view>
+    <view>总票房：10亿</view>
+  </view>
+  <!--演员表-->
+  <view class="actor_list">
+    <template is="arrowLeft" data="{{left:'演员', right: '查看全部演员'}}" />
+    <scroll-view class="scroll-view_H" scroll-x="true" style="height:260rpx; white-space: nowrap;">
+      <block wx:for="{{[0,1,2,3,4,5,6]}}" wx:key="index">
+        <view class="scroll-view-item_H ">
+          <image src="" style="width: 170rpx; height:200rpx;background-color:#777;border-radius: 15rpx;" />
+          <view>乔.罗素</view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+  <!--剧照和视频-->
+  <view class="video_list">
+    <template is="arrowLeft" data="{{left:'剧照和视频', right: '查看全部'}}" />
+    <scroll-view class="scroll-view_H" scroll-x="true" style="height:240rpx; white-space: nowrap;">
+      <block wx:for="{{[0,1,2,3,4,5,6]}}" wx:key="index">
+        <view class="scroll-view-item_H ">
+          <block wx:if="{{index === 0}}">
+            <video id="myVideo1" controls objectFit="fill" src="" style="width: 340rpx; height:200rpx; border-radius: 15rpx;" />
+          </block>
+          <block wx:else>
+            <image src="" style="width: 200rpx; height:200rpx;background-color:#777;border-radius: 15rpx;" />
+          </block>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+  <!--影片评论-->
+  <view class="film_comment">
+    <view class="film_comment_top">
+      <view style="font-weight: 900">影片评论</view>
+      <view class="write_comment_button">写影评</view>
+    </view>
+    <template is="commentList" data="" />
+  </view>
+  <template is="fixedBottom" data="{{text:'特惠抢票'}}" />
+</view>

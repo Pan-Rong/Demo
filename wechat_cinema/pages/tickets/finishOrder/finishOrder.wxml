@@ -1,0 +1,54 @@
+<!--电影票-->
+<view>
+  <view style="margin-left: 25rpx;font-size:1.2em;">电影票</view>
+  <view class="finish_order_top" style="border-bottom: 1rpx solid #444;">
+    <image src="" class="fini_order_flm_img" />
+    <view>
+      <view style="font-size:1.2em;margin: 5rpx 0;">
+        <text style="font-weight:700;color:#ddd">超时空同居</text>
+        <text style="margin: 0 20rpx;">2张</text>
+      </view>
+      <view style="color:#F08519">
+        <text>今天06-16</text>
+        <text style="margin: 0 20rpx;">14:55</text>
+        <text>(国语2D)</text>
+      </view>
+      <view>
+        <text>岽锦泰禾影城1店</text>
+      </view>
+      <view>
+        <text>4号厅</text>
+        <text class="fini_order_top_text">6排4座</text>
+        <text style="padding:0 15rpx;">6排5座</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!--卖品订单-->
+<view>
+  <view style="margin-left: 25rpx;font-size:1.2em;">卖品订单</view>
+  <view style="border-bottom:1rpx solid #444;">
+    <block wx:for="{{[0,1]}}" wx:key="{{index}}">
+      <view class="finish_order_top" style="padding:5rpx 15rpx;">
+        <image src="" class="fini_order_meal_img" />
+        <view class="finish_order_meal_text">
+          <view style="font-size: 1.1em;color:#ddd;">1桶爆米花+1杯可乐</view>
+          <view style="color:#aaa;">
+            <text>数量：</text>
+            <text>1</text>
+          </view>
+          <view style="color:#aaa;">
+            <text>总价：</text>
+            <text> 16</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view style="color:#aaa;text-align:right;padding-right:25rpx;">
+    <text style="margin-right:40rpx;">共3件商品</text>
+    <text>小计：</text>
+    <text style="color:#F08519;">￥</text>
+    <text style="color:#F08519;font-size: 1.3em">113.8</text>
+  </view>
+</view>

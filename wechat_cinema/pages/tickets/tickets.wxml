@@ -1,0 +1,63 @@
+<!--pages/tickets/tickets.wxml-->
+<import src="../../components/ticketsPopular/ticketsPopular.wxml" />
+<import src="../../components/scrollView/scrollView.wxml" />
+<import src="../../components/ticketsComing/ticketsComing.wxml" />
+<import src="../../components/arrowLeft/arrowLeft.wxml" />
+
+<view class="body">
+  <!--tab切换-->
+  <view class="nav">
+    <view class="nav_left_location">苏州</view>
+    <view class="{{selected?'orange':'default'}}" bindtap="selected">正在热映</view>
+    <view class="nav_division"></view>
+    <view class="{{selected1?'orange':'default'}}" bindtap="selected1">即将上映</view>
+
+  </view>
+  <!--正在热映-->
+  <view class="{{selected ? 'popular_container':'hidden'}}">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height: 280rpx;">
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" style="width:750rpx;height:100%" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="popular_top_flg">
+      <view class="popular_top_flg_right">本周热映</view>
+      <view class="popular_top_flg_btm" />
+    </view>
+    <view class="move_popular_list">
+      <template is="ticketsPopular" data="{{dataPopular}}" />
+    </view>
+  </view>
+  <!--即将上映-->
+  <view class="{{selected1 ? 'coming_container':'hidden'}}">
+    <!--本月最火-->
+    <view class="coming_title_bckg">
+      <view class="coming_title_bckg_innerfrm">
+        <template is="arrowLeft" data="{{ leftMark:false,left:'本月想看人数最多',fontWeight: '400' }}" />
+      </view>
+    </view>
+    <view class="coming_film_list">
+      <template is="scrollView" data="" />
+    </view>
+    <!--明天上映-->
+    <view class="coming_title_bckg" style="margin-top:30rpx;">
+      <view class="coming_title_bckg_innerfrm" >
+        <template is="arrowLeft" data="{{ leftMark:false,left:'2018-06-16 明天',fontWeight: '400' }}" />
+      </view>
+    </view>
+    <view class="coming_film_list">
+      <template is="ticketsPopular" data="{{dataPopular: dataComing.tomorrow}}" />
+    </view>
+    <!--近期上映-->
+    <view class="coming_title_bckg" style="margin-top:-30rpx;">
+      <view class="coming_title_bckg_innerfrm">
+        <template is="arrowLeft" data="{{ leftMark:false,left:'2018-06-18',fontWeight: '400' }}" />
+      </view>
+    </view>
+    <view class="coming_film_list">
+      <template is="ticketsPopular" data="{{dataPopular: dataComing.otherDay}}" />
+    </view>
+  </view>
+</view>

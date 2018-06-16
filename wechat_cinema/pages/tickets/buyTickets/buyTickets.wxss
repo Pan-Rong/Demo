@@ -1,0 +1,173 @@
+/* pages/tickets/buyTickets/buyTickets.wxss */
+
+/* pages/tickets/buyTickets/buyTickets.wxss */
+@import "../../../components/badge/badge.wxss";
+@import "../../../components/arrowLeft/arrowLeft.wxss";
+@import "../../../components/commentList/commentList.wxss";
+@import "../../../components/fixedBottom/fixedBottom.wxss";
+
+page {
+  color: #ddd;
+}
+
+.film_list_item {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: 0 20rpx;
+  border-bottom: 3rpx solid #333;
+  height: 220rpx;
+}
+
+.film_list_item_text {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 20rpx;
+  font-size: 28rpx;
+}
+
+.film_poster {
+  position: relative;
+  top: -90rpx;
+  width: 200rpx;
+  height: 280rpx;
+  background-color: #ccc;
+  box-shadow: 0rpx 0rpx 20rpx 3rpx #888;
+  border-radius: 15rpx;
+  z-index: 500;
+}
+
+.film_list_item_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 95%;
+  height: 200rpx;
+}
+
+.film_icon_row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  line-height: 40rpx;
+}
+
+.film_icon_row_frm {
+  display: flex;
+  flex-direction: row;
+}
+
+.fir_inner_image {
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.fir_inner_text {
+  display: block;
+  margin-left: 10rpx;
+  height: 45rpx;
+}
+
+.middle_film_grade {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  margin: 20rpx 0 30rpx;
+}
+
+.middle_film_grade_top {
+  color: #f08519;
+  font-size: 1.1em;
+}
+
+.middle_film_grade_icon {
+  width: 25rpx;
+  height: 25rpx;
+  margin: 0 5rpx;
+}
+
+.middle_film_grade_bottom {
+  font-size: 0.8em;
+}
+
+.bottom_film_grade {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.middle_film_grade_button {
+  width: 300rpx;
+  height: 80rpx;
+  background-color: #4a4a51;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.film_story_info {
+  margin: 0 10rpx 20rpx;
+  font-size: 0.9em;
+}
+
+.multiText {
+  width: 100%; /*规定盒子的大小，也可以是固定的值*/
+  overflow: hidden; /*隐藏超出的内容*/
+  text-overflow: ellipsis;
+  word-break: break-all; /*破坏所有类型的字符对象*/
+  display: -webkit-box; /*对象作为伸缩盒子模型显示*/
+  -webkit-box-orient: vertical; /*设置或检索伸缩盒对象的子元素的排列方式*/
+  -webkit-line-clamp: 4; /*显示的行数*/
+}
+
+.tickets_box_office {
+  margin: 20rpx 20rpx 30rpx;
+  border-radius: 15rpx;
+  padding: 10rpx 20rpx;
+  color: #aaa;
+  font-size: 0.9em;
+  background-color: #37373f;
+}
+
+.scroll-view_H {
+  height: 400rpx;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.scroll-view-item_H {
+  display: inline-block;
+  margin: 0 10rpx 10rpx;
+  text-align: center;
+}
+
+.video_list {
+  border-bottom: 10rpx solid #393942;
+}
+
+.film_comment {
+  position: relative;
+  margin: 30rpx 10rpx 90rpx;
+}
+
+.film_comment_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.write_comment_button {
+  width: 140rpx;
+  height: 65rpx;
+  border-radius: 35rpx;
+  background-color: #f08519;
+  text-align: center;
+  line-height: 65rpx;
+  font-size: 0.9em;
+  margin-right: 15rpx;
+}

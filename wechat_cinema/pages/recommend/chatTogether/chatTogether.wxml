@@ -1,0 +1,7 @@
+<!--pages/recommend/chatTogether/chatTogether.wxml-->
+<import src="../../../components/chatBubble/chatBubble.wxml" />
+<import src="../../../components/inputFixBtm/inputFixBtm.wxml" />
+<view style="margin-bottom: 120rpx;">
+  <template is="chatBubble" data="{{msg: msg }}" />
+</view>
+<template is="inputFixBtm" data="{{ input }}" />

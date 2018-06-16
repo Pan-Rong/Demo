@@ -1,0 +1,37 @@
+/* pages/tickets/finishOrder/finishOrder.wxss */
+
+.finish_order_top {
+  display: flex;
+  flex-direction: row;
+  margin: 15rpx 10rpx;
+  padding: 15rpx;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+.fini_order_flm_img {
+  width: 160rpx;
+  height: 200rpx;
+  margin-right: 15rpx;
+  background-color: #777;
+  border-radius: 15rpx;
+}
+
+.fini_order_top_text {
+  margin: 0 0 0 30rpx;
+  padding: 0 15rpx;
+  border-right: 1rpx solid #888;
+}
+
+.fini_order_meal_img {
+  width: 240rpx;
+  height: 180rpx;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+  background-color: #777;
+}
+.finish_order_meal_text{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

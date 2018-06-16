@@ -1,0 +1,7 @@
+/* pages/recommend/chatTogether/chatTogether.wxss */
+@import "../../../components/chatBubble/chatBubble.wxss";
+@import "../../../components/inputFixBtm/inputFixBtm.wxss";
+page{
+  background-color:#EBEBEB;
+  color:#333;
+}

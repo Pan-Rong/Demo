@@ -1,0 +1,44 @@
+/* pages/tickets/selectCinema/selectCinema.wxss */
+@import "../../../components/cinemaList/cinemaList.wxss";
+
+.nav {
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  border: 1rpx solid #444;
+  margin-bottom: 40rpx;
+}
+
+.default {
+  line-height: 70rpx;
+  text-align: center;
+  width: 200rpx;
+  flex: 1;
+  font-size: 28rpx;
+}
+
+.orange {
+  line-height: 70rpx;
+  text-align: center;
+  width: 200rpx;
+  color: #F08519;
+  flex: 1;
+  font-size: 28rpx;
+}
+
+.hidden {
+  display: none;
+}
+
+.scroll-view_H {
+  height: 400rpx;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.scroll-view-item_H {
+  text-align: center;
+  display: inline-block;
+  margin: 0 10rpx 10rpx;
+}

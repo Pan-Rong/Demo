@@ -1,0 +1,91 @@
+<!--pages/tickets/confirmOrder/confirmOrder.wxml-->
+<import src="../../../components/miniBadge/miniBadge.wxml" />
+<import src="../../../components/goodsList/goodsList.wxml" />
+<view class="order_container">
+  <!--头部信息-->
+  <view class="order_top">
+    <view style="font-size:1.2em;margin: 5rpx 0;">
+      <text style="font-weight:700;color:#ddd">超时空同居</text>
+      <text style="margin: 0 20rpx;">2张</text>
+    </view>
+    <view style="color:#F08519">
+      <text>今天06-16</text>
+      <text style="margin: 0 20rpx;">14:55</text>
+      <text>(国语2D)</text>
+    </view>
+    <view>
+      <text>岽锦泰禾影城1店</text>
+    </view>
+    <view>
+      <text>4号厅</text>
+      <text class="order_top_text">6排4座</text>
+      <text style="padding:0 15rpx;">6排5座</text>
+    </view>
+  </view>
+  <view class="order_top_line"></view>
+  <view class="order_top">
+    <view class="order_top_btm">
+      <view class="order_top_btm_item">
+        <image src="../../../comm/images/error.png" class="order_top_btm_image" />
+        <view style="margin-right:50rpx;">不可退票</view>
+      </view>
+      <view class="order_top_btm">
+        <image src="../../../comm/images/error.png" class="order_top_btm_image" />
+        <view>不可改签</view>
+      </view>
+    </view>
+  </view>
+  <!--特惠活动-->
+  <view class="order_middle_top">
+    <view class="order_middle_tt">
+      <view class="order_middle_ttleft">
+        <view>特惠活动</view>
+        <template is="miniBadge" data="{{icon:'惠',className: ' background-color:#F08519'}}" />
+      </view>
+      <view style="color:#F08519;">
+        <text>-￥</text>
+        <text style="margin-right:20rpx;font-size:1.2em">4.2</text>
+        <switch checked bindchange="switch1Change" />
+      </view>
+    </view>
+    <view class="order_middle_tb">
+      <view>票价总计</view>
+      <view style="color:#F08519;">
+        <text style="color:#aaa;margin-right:20rpx;">含服务费3元/张</text>
+        <text>￥</text>
+        <text style="margin-right:20rpx;font-size:1.2em">65.8</text>
+      </view>
+    </view>
+
+  </view>
+  <view class="order_middle_btm">
+    <view class="order_middle_btmleft">
+      <image src="../../../comm/images/VIPcard.png" class="order_middle_btmImg" />
+      <view>
+        <view>岽锦泰禾影城VIP卡 (19.9元/年)</view>
+        <view style="font-size:0.9em;color:#aaa;">开通后立省20元，卖品更优惠哦</view>
+      </view>
+    </view>
+    <view style="padding-top:15rpx">
+      <switch checked bindchange="switch1Change" />
+    </view>
+  </view>
+  <!--选购小食-->
+  <view>
+    <view class="meal_top_title">选购小食</view>
+    <view class="meal_list">
+      <template is="goodsList" data="{{...obj,item1}}" />
+    </view>
+  </view>
+  <!--底部订单显示栏-->
+  <view class="order_fix_btm">
+    <view style="color:#F08519;text-align:center;width:500rpx">
+      <text>￥</text>
+      <text style="font-size: 1.3em;">113.8</text>
+      <text style="color:#aaa;font-size:0.8em;margin:0 15rpx">不支持退票</text>
+      <text style="color:#aaa;font-size:0.8em;">改签</text>
+    </view>
+    <view style="background-color:#F08519;width: 200rpx; color:#fff" bindtap="payTheOrder" id="pay">立即付款</view>
+  </view>
+
+</view>

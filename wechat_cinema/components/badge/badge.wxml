@@ -1,0 +1,8 @@
+<template name="badge">
+  <view class="film_title_badge">
+    <view class="{{ title.length > 10 ? 'film-title_b': 'film-title_visible'}}">{{title}}</view>
+    <block wx:if="{{ icon != '' }}">
+      <view class="film-badge {{position}}">{{icon}}</view>
+    </block>
+  </view>
+</template>

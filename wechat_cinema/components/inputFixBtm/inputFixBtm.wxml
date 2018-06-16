@@ -1,0 +1,7 @@
+<template name="inputFixBtm">
+  <view class="input_fixed_bottom">
+    <input placeholder='' class="input_fixed_frm"  bindconfirm="sendChatContent"value="{{ input }}" id="chatInput"/>
+    <image src="../../../comm/images/emoji.png" class="input_emojiIcon" />
+    <image src="../../../comm/images/addIcon.png" class="input_addIcon" />
+  </view>
+</template>

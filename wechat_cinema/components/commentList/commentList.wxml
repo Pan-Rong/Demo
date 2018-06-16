@@ -1,0 +1,31 @@
+<template name="commentList">
+  <block wx:for="{{[0,1,2,3]}}" wx:key="index">
+    <view class="film_comment_item">
+      <view class="film_comment_user">
+        <image src="" style="display: block; width: 90rpx; height :90rpx; border-radius: 45rpx; background-color: #ccc" />
+        <view class="film_comment_user_right">
+          <view>MISS YOU</view>
+          <view>
+            <block wx:for="{{[0,1,2,3,4]}}" wx:key="{{index}}">
+              <image src="../../../comm/images/star_active.png" class="middle_film_grade_icon" />
+            </block>
+          </view>
+        </view>
+      </view>
+      <view class="film_comment_content">
+        <view>
+          <text>影评内容，测试用例,测试用例，影评内容，测试用例，影评内容，影评内容，测试用例，影评内容，测试用例，影评内容，测试用例，</text>
+        </view>
+        <view class="film_comment_content_footer">
+          <view>1分钟前</view>
+          <view class="film_comment_content_footer_right">
+            <view class="fccfr_row">
+              <image src="../../../comm/images/support.png"  class="film_comment_icon"/><view>9288</view></view>
+            <view class="fccfr_row" style="margin-left: 15rpx;">
+              <image src="../../../comm/images/msg.png"    class="film_comment_icon"/><view>1383</view></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</template>

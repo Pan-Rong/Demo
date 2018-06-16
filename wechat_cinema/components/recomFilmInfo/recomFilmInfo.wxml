@@ -1,0 +1,26 @@
+<import src="../badge/badge.wxml" />
+
+<template name="recomFilmInfo">
+  <view class="recom_film_item">
+    <view>
+      <image src="" style="width: 200rpx; height:250rpx;background-color:#ccc;border-radius: 15rpx;" />
+    </view>
+    <view class="recom_film_item_text">
+      <view class="recom_film_item_left">
+        <view style="font-size: 30rpx;font-weight:800;color:#ddd;"> <template is="badge" data="{{title: data.title1 ,icon:'3D'}}" /></view>
+        <view>{{data.title2}}</view>
+        <view>{{data.title3}}</view>
+        <view>{{data.title4}}</view>
+        <view>{{data.title5}}</view>
+         <view class="recom_filmde_text">
+          <view style="font-size: 1em;color:#ddd">{{data.title6}}</view>
+          <view class="right_arrow" ></view>
+        </view> 
+      </view>
+      <view class="recom_film_item_right">
+        <view style="line-height: 70rpx;">开始倒计时</view>
+        <view>00： 24：23 </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,25 @@
+<template name="sessionList">
+  <block wx:for="{{[0,1,2,3,4]}}" wx:key="{{index}}">
+    <view class="cmp_session_list_container">
+      <view>
+        <view style="font-size:1.3em;font-weight:600">14:55</view>
+        <view class="cmp_session_text_aaa">16:35散场</view>
+      </view>
+      <view>
+        <view>国语2D</view>
+        <view>4号厅</view>
+      </view>
+      <view>
+        <view style="color:#F08519">￥
+          <text style="font-size:1.5em">32</text>
+        </view>
+        <view style="color:#1D8FE1">
+          <text class="cmp_session_text_aaa">VIP卡</text>
+          <text style="margin:0 5rpx">￥</text>
+          <text>27</text>
+        </view>
+      </view>
+      <view class="cmp_session_btn" bindtap='selectSeat' id="session_{{index}}">选座购票</view>
+    </view>
+  </block>
+</template>

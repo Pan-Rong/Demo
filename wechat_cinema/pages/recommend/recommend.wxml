@@ -1,0 +1,91 @@
+<!--pages/recommend/recommend.wxml-->
+<!--pages/home/home.wxml-->
+<import src="../../components/arrowLeft/arrowLeft.wxml" />
+
+<import src="../../components/recomFilmInfo/recomFilmInfo.wxml" />
+
+<view class="section_top">
+  <view class="left_location">苏州</view>
+  <!--搜索框-->
+  <view class="section">
+    <icon type="search" class="search_icon" color="#ccc" size="20" />
+    <input type="text" class="search_input" placeholder='search' auto-focus />
+  </view>
+</view>
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height: 260rpx;">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item}}" style="width:750rpx;height:100%" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<!--横排显示-->
+<view class="section_middle">
+  <view class="section_middle_block">
+    <image src="" style="width: 350rpx; height:180rpx;background-color:#777;" />
+    <view class="section_middle_text">
+      <view style="font-size: 1em;color:#eee">我想点</view>
+      <view class="right_arrow"></view>
+    </view>
+  </view>
+  <view class="section_middle_block">
+    <image src="" style="width: 350rpx; height:180rpx;background-color:#777;" />
+    <view class="section_middle_text">
+      <view style="font-size: 1em;color:#eee">进入看看</view>
+      <view class="right_arrow"></view>
+    </view>
+  </view>
+</view>
+<!--购买票后显示的内容，start -->
+<view class="showOrHidden">
+  <template is="recomFilmInfo" data="{{data:{title1:'复仇者联盟3：无限战争',title2:'Avengers:Infinity War', title3:'动作/科幻/奇幻/冒险',title4:'电影时长：150分钟',title5:'2018-05-31上映',title6:'电影详情'} }}"></template>
+  <template is="arrowLeft" data="{{ leftMark:false, left: '同厅观影(1号厅)' ,right: '42人正在观影',urlNew:'./watchTogether/watchTogether' }}"></template>
+  <view class="recom_show_avatar">
+    <block wx:for="{{[0,1,2,3,4,5,6,7,8,9]}}" wx:key="index">
+      <view style="position: relative">
+        <image src="" class="recom_user_avatar" />
+        <block wx:if="{{index%2 == 0}}">
+          <image src="../../comm/images/boy.png" class="recom_user_sex" />
+        </block>
+        <block wx:else>
+          <image src="../../comm/images/girl.png" class="recom_user_sex" />
+        </block>
+      </view>
+    </block>
+  </view>
+  <template is="arrowLeft" data="{{ leftMark:false, left: '16人正在热议' ,right: '进入热聊区',urlNew:'./chatTogether/chatTogether' }}" />
+  <view style="width:100%; border:4rpx solid #444;"></view>
+  <view class="tickets_box_office">
+    <view style="font-size:1em;color:#ddd;font-weight:800;line-height:60rpx">票房</view>
+    <view>今日实时票房：1888万</view>
+    <view>总票房：10亿</view>
+  </view>
+</view>
+<!--end-->
+<!--正在热映-->
+<view class="section_container">
+  <template is="arrowLeft" data="{{left: '正在热映' ,right: '我在XX等你哦', url:'../tickets/tickets' }}"></template>
+
+  <scroll-view class="scroll-view_H" scroll-x="true" style="height:300rpx; white-space: nowrap;">
+    <block wx:for="{{[0,1,2,3,4,5,6]}}" wx:key="index">
+      <view id="green1" class="scroll-view-item_H ">
+        <image src="" style="width: 200rpx; height:250rpx;background-color:#777;border-radius: 15rpx;" />
+        <view>复仇者联盟</view>
+      </view>
+    </block>
+  </scroll-view>
+</view>
+<!--送餐入座-->
+<view class="section_container">
+  <template is="arrowLeft" data="{{left: '送餐入座' ,right: '渴了饿了 随叫随到', url:'../goods/goods' }}"></template>
+
+  <scroll-view class="scroll-view_H" scroll-x="true" style="height:200rpx; white-space: nowrap;">
+    <block wx:for="{{[0,1,2,3,4,5,6]}}" wx:key="index">
+      <view id="green1" class="scroll-view-item_HH ">
+        <image src="" style="width: 200rpx; height:180rpx;background-color:#777;border-radius: 15rpx;" />
+      </view>
+    </block>
+  </scroll-view>
+  <view class="section_bottom_title">亲，我到底啦！</view>
+</view>

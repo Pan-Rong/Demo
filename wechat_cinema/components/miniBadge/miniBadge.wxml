@@ -1,0 +1,5 @@
+<template name="miniBadge">
+  <block wx:if="{{ icon != '' }}">
+    <view class="cmp_minibadge" style="{{className}}">{{icon}}</view>
+  </block>
+</template>

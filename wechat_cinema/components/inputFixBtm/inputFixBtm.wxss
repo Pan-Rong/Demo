@@ -1,0 +1,37 @@
+.input_fixed_bottom {
+  position: fixed;
+  bottom: 0rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100rpx;
+  width: 100%;
+  line-height: 90rpx;
+  text-align: center;
+  background-color: #f4f4f6;
+  z-index: 500;
+}
+
+.input_fixed_frm {
+  display: block;
+  width: 520rpx;
+  height: 70rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 10rpx;
+  background-color: #fff;
+  margin: 10rpx auto;
+}
+
+.input_emojiIcon {
+  display: block;
+  width: 55rpx;
+  height: 55rpx;
+  margin: auto 10rpx auto 0;
+}
+
+.input_addIcon {
+  display: block;
+  width: 60rpx;
+  height: 60rpx;
+  margin: auto 25rpx auto 15rpx;
+}

@@ -1,0 +1,12 @@
+.cmp_minibadge{
+  position: relative;
+  margin: 0 20rpx 0 10rpx;
+  color: #ddd;
+  border-radius: 5rpx;
+  text-align: center;
+  padding: 5rpx 7rpx 0;
+  height: 30rpx;
+  font-size:0.8em;
+  top: 10rpx; 
+  line-height: 30rpx;
+}

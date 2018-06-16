@@ -1,0 +1,39 @@
+/* pages/recommend/watchTogether/watchTogether.wxss */
+@import "../../../components/watchTgthlist/watchTgthlist.wxss";
+
+.watch_tgth_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90rpx;
+  margin: 5rpx 20rpx;
+}
+
+.watch_tgth_tab {
+  display: flex;
+  flex-direction: row;
+  height: 65rpx;
+  width: 400rpx;
+  line-height: 65rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  border: 1rpx solid #aaa;
+}
+
+.watch_tgth_tab_button1 {
+  width: 33%;
+  border-right: 1rpx solid #aaa;
+  height: 100%;
+}
+.watch_tgth_tab_button2{
+    width: 34%;
+}
+.watch_tgth_tab_button3{
+  width:33%;
+  border-left:1rpx solid #aaa;
+  height:100%;
+}
+.selected{
+  background-color:#929292;
+}

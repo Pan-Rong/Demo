@@ -1,0 +1,45 @@
+<template name="chatBubble">
+  <block wx:for="{{[0,1,2,3,4,5,6,7]}}" wx:key="{{index}}">
+    <block wx:if="{{ index%2 !== 0}}">
+      <!--他人发的消息-->
+      <view class="chat_list">
+        <view class="chat_list_item">
+          <view class="chat_list_item_left">
+            <view>
+              <image src="" class="chat_list_avatar" />
+              <image src="../../../comm/images/girl.png" class="chat_list_avatar_sex" />
+            </view>
+            <view class="chat_list_info_left">
+              <view style="font-size:0.8em;color:#aaa">一山</view>
+              <view class="bubble_frm">
+                <view class="trangleSet"></view>你喜欢看电影么？你喜欢看你喜欢看电影么？
+                <view class="chat_timestamp">18: 23</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+    <block wx:elif="{{ msg.type == 'me' }}">
+      <!--自己发的消息-->
+      <view class="chat_list">
+        <view class="chat_list_right">
+          <view class="chat_list_item_left">
+            <view class="chat_list_info_right">
+              <view style="font-size:0.8em;color:#aaa">一山</view>
+              <view class="bubble_frm_right">
+                <view class="trangleSet_right"></view>
+                {{ msg.msg }}
+                <view class="chat_timestamp_right">{{msg.time}}</view>
+              </view>
+            </view>
+            <view>
+              <image src="" class="chat_list_avatar" />
+              <image src="../../../comm/images/boy.png" class="chat_list_avatar_sex" />
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </block>
+</template>

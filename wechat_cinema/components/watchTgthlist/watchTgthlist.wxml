@@ -1,0 +1,34 @@
+<template name="watchTgthlist">
+  <block wx:for="{{[0,1,2,3,4,5,6,7,8]}}" wx:if="{{selected}}" wx:key="{{index}}">
+    <block wx:if="{{(selected === 'all' || selected === 'girls') &&(index%2 === 0) }}">
+      <view class="tgth_list">
+        <view class="tgth_list_item">
+          <view class="tgth_list_item_left">
+            <image src="" class="tgth_list_avatar" />
+            <image src="../../../comm/images/girl.png" class="tgth_list_avatar_sex" />
+            <view class="tgth_list_info">
+              <view>晓彤</view>
+              <view style="font-size:0.8em;color:#aaa">发言23条</view>
+            </view>
+          </view>
+          <view class="tgth_list_button" bindtap='enterChatSecret' id="../chatSecret/chatSecret">悄悄话</view>
+        </view>
+      </view>
+    </block>
+    <block wx:elif="{{(selected === 'all' || selected === 'boys') &&(index%2 !== 0)}}">
+      <view class="tgth_list">
+        <view class="tgth_list_item">
+          <view class="tgth_list_item_left">
+            <image src="" class="tgth_list_avatar" />
+            <image src="../../../comm/images/boy.png" class="tgth_list_avatar_sex" />
+            <view class="tgth_list_info">
+              <view>晓彤</view>
+              <view style="font-size:0.8em;color:#aaa">发言23条</view>
+            </view>
+          </view>
+          <view class="tgth_list_button" bindtap='enterChatSecret' id="../chatSecret/chatSecret">悄悄话</view>
+        </view>
+      </view>
+    </block>
+  </block>
+</template>

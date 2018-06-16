@@ -1,0 +1,40 @@
+.film_title_badge {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.film-title_b {
+  font-size: 30rpx;
+  font-weight: 800;
+  width: 320rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.film-title_visible {
+  font-size: 30rpx;
+  font-weight: 800;
+}
+
+.film-badge {
+  position: relative;
+  margin-left: 10rpx;
+  color: #ddd;
+  border-radius: 10rpx;
+  width: 55rpx;
+  text-align: center;
+  height: 35rpx;
+  background-color: #f08519;
+  font-weight: 500;
+  top: 8rpx;
+  line-height: 35rpx;
+}
+
+.badgeRightTop {
+  position: relative;
+  top: -15rpx;
+  left: -10rpx;
+}

@@ -1,0 +1,32 @@
+<template name="arrowLeft">
+  <view class="scroll_top">
+    <view class="section__title">
+      <view class="{{ leftMark === false ? 'hidden_mark' : 'left_mark'}}"></view>
+      <text style="font-weight: {{ fontWeight ? fontWeight: '900' }}">{{ left }}</text>
+    </view>
+    <block wx:if="{{ url != undefined }}">
+      <navigator url="{{url}}" open-type="switchTab" hover-class="other-navigator-hover">
+        <view class="section_title_right" >
+          <text>{{ right }}</text>
+          <block wx:if="{{arrowMark === false}}">
+            <view></view>
+          </block>
+          <block wx:else>
+            <view class="right_arrow"></view>
+          </block>
+        </view>
+      </navigator>
+    </block>
+    <block wx:else>
+       <view class="section_title_right"  bindtap='navgatorToNew' id="{{urlNew}}">
+          <text style="margin-top:3rpx;">{{ right }}</text>
+          <block wx:if="{{arrowMark === false}}">
+            <view></view>
+          </block>
+          <block wx:else>
+            <view class="right_arrow"></view>
+          </block>
+        </view>
+    </block>
+  </view>
+</template>
